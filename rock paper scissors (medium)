@@ -1,0 +1,7 @@
+var = ['камень', 'ящерица', 'Спок', 'ножницы', 'бумага']
+t, r = var.index(input()), var.index(input())
+
+if t == r:
+    print("Ничья")
+else:
+    print("Тимур" if abs((t - r)) % 2 == 0 and t > r or abs((t - r)) % 2 != 0 and t < r else "Руслан"))
